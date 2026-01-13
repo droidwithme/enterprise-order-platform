@@ -37,6 +37,6 @@ management:
 security:
   jwt:
     secret: my-super-secret-key-my-super-secret-key-123456
-    expiration-minutes: 60
+    expiration-minutes: 5256000
 
 

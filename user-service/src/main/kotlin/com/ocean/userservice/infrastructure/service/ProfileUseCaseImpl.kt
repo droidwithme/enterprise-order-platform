@@ -20,7 +20,7 @@ class ProfileUseCaseImpl(
         val uuid = UUID.fromString(userId)
         val user = userRepository.findById(uuid)
             ?: throw UserNotFoundException(uuid)
-
+        print("USER FOUND: $user")
         val orders = orderHistoryUseCase.getOrdersForUser(userId)
 
         return UserProfile(

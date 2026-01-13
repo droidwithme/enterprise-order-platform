@@ -11,6 +11,10 @@ docker build -t order-service:1.0 order-service
 docker build -t notification-service:1.0 notification-service
 docker build -t user-service:1.0 user-service
 
+
+echo "Building UI Docker image..."
+docker build -t user-ui:1.0 user-ui
+
 echo "Starting full system with Docker Compose..."
 docker compose -f docker-compose.full.yml up -d
 
@@ -19,6 +23,7 @@ sleep 20
 
 echo ""
 echo "System is up!"
+echo "UI:        http://localhost:3001"
 echo "Swagger: http://localhost:8081/swagger-ui.html"
 echo "Postgres: localhost:5432 (user: postgres / pass: postgres)"
 echo ""
