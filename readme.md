@@ -131,6 +131,8 @@ Visualizes:
 - Docker Compose
 
 ### Start the System
+**From root directory**
+```./scripts/start-local.sh  ```
 
 
 docker compose up
