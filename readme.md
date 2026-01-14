@@ -68,6 +68,8 @@ Databases:
 Monitoring:
 Prometheus  --->  Grafana
 
+```
+
 ## User Interface
 
 ### Login Page
@@ -78,7 +80,19 @@ Prometheus  --->  Grafana
 
 ### Profile & Orders
 ![Profile](docs/ui-profile.png)
-```
+
+### Grafana- JVM Page
+![Login](docs/ui-grafana-jvm.png)
+
+### Grafana Memory Page
+![Register](docs/ui-grafana-memory.png)
+
+### Grafana Springboot Page
+![Profile](docs/ui-grafana-springboot.png)
+
+### Prometheus Page
+![Profile](docs/ui-prometheus.png)
+
 
 ## 🧩 Microservices
 
