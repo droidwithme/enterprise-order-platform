@@ -12,15 +12,16 @@ spring:
     driver-class-name: org.postgresql.Driver
 
   jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
     show-sql: true
     open-in-view: false
     hibernate:
-      ddl-auto: validate
+      ddl-auto: update
 
   flyway:
     baseline-on-migrate: true
     validate-on-migrate: false
-    baseline-version: 2
+    baseline-version: 0
 
   kafka:
     bootstrap-servers: ${SPRING_KAFKA_BOOTSTRAP_SERVERS}

@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://user-service:8090", // confirm this is your user-service baseURL http://user-service:8090"
+ baseURL: "http://localhost:8090", // confirm this is your user-service baseURL http://user-service:8090"
 });
 
 api.interceptors.request.use((config) => {

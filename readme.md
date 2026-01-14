@@ -33,6 +33,53 @@ This project follows real enterprise design principles:
 
 ---
 
+```
+## 🏗 High Level Architecture
+
+```text
+Client
+  |
+  v
++----------------+
+| User Service   |
++----------------+
+  |
+  v
++----------------+
+| Order Service  |
++----------------+
+  |
+  | (Kafka Events)
+  v
++----------------+
+| Redpanda       |
+| (Kafka)        |
++----------------+
+  |
+  v
++------------------------+
+| Notification Service  |
++------------------------+
+
+Databases:
+- User Service  ---> PostgreSQL (userdb)
+- Order Service ---> PostgreSQL (orderdb)
+
+Monitoring:
+Prometheus  --->  Grafana
+
+## User Interface
+
+### Login Page
+![Login](docs/ui-login.png)
+
+### Registration Page
+![Register](docs/ui-register.png)
+
+### Profile & Orders
+![Profile](docs/ui-profile.png)
+```
+
 ## 🧩 Microservices
 
 ### 1. User Service
